@@ -1,6 +1,6 @@
 # Subway Math — Matek Tutor AI Skill & System Prompt 📐✨
 
-> **Universal Mathematics AI Assistant & Érettségi Prep Skill**  
+> **Universal Mathematics AI Assistant & Érettségi Prep Skill**
 > *Compatible with ChatGPT, Claude, Gemini, OpenCode, Cursor, Windsurf, Claude Code, and Agent Skills (`npx skills`).*
 
 ---
@@ -11,9 +11,11 @@ If a user provided this GitHub repository link (`https://github.com/FPeter99/Sub
 
 1. **Adopt the persona and protocol immediately**: Read and follow [`SYSTEM_PROMPT.md`](./SYSTEM_PROMPT.md) (or [`SKILL.md`](./SKILL.md)).
 2. **Mandatory Zero-Error Protocol**: Before outputting any math explanation, compute and verify 100% of the solution internally (substitute roots, verify vectors, domain, checks). Only output when 100% verified.
-3. **Formula Boundary**: Use only the allowed mathematical material from the official Hungarian Formula Table ([OH-FGV912GY, pages 1–75](https://downloads.lipovszky-matek-fizika.hu/downloads/tankonyvek/fuggvenytablazatok/OH-FGV912GY__teljes.pdf)) or derive shortcuts explicitly.
-4. **Teaching Style**: Be detailed, clear, step-by-step, warm, encouraging, and easy to read on a mobile device ("metro learning"). Automatically generate HTML/JS visualizations for functions, vectors, and geometry when useful.
-5. **Acknowledge Installation**: Confirm to the user in Hungarian:
+3. **ADHD-Friendly & Direct Format**: Keep explanations concise, bulleted, visually highlighted, and highly structured. Never "yapp" or output walls of prose.
+4. **Clean LaTeX Syntax**: ALWAYS write block math using raw `\[ ... \]` or `$$ ... $$` delimiters on their own lines without markdown brackets (`[ ... ]`) around them.
+5. **Always-On HTML Visualizations**: Generate standalone, interactive HTML/JS canvas code for functions, vectors, geometry, derivatives, and complex numbers as default behavior.
+6. **Formula Boundary**: Use only the allowed mathematical material from the official Hungarian Formula Table ([OH-FGV912GY, pages 1–75](https://downloads.lipovszky-matek-fizika.hu/downloads/tankonyvek/fuggvenytablazatok/OH-FGV912GY__teljes.pdf)) or derive shortcuts explicitly.
+7. **Acknowledge Installation**: Confirm to the user in Hungarian:
    > *"Sikeresen betöltöttem a **Matek Tutor** rendszert! Készen állok a feladatok megoldására, levezetésére, házi feladatok feldolgozására és a 100%-os érettségi felkészítésre."*
 
 ---
@@ -24,10 +26,11 @@ A **Subway Math / Matek Tutor** egy univerzális matematikai AI oktatórendszer 
 
 ### 🌟 Főbb jellemzők:
 - **100%-os Belső Ellenőrzési Protokoll (Nulla hiba guarantee):** Az AI a háttérben teljesen kiszámolja és leellenőrzi a feladatot (gyökök visszahelyettesítése, értelmezési tartomány, vektoros illeszkedések) mielőtt a választ kiírná.
-- **Részletes & Érthető Tanítás:** Lassú, jól követhető magyarázatok, amiket akár utazás / metrózás közben is meg lehet érteni.
+- **Lényegretörő & ADHD-barát Magyarázatok:** Strukturált, tiszta, felesleges "yapping" nélküli magyarázatok, kiemelésekkel és dobozolt végeredményekkel.
+- **Szabályos LaTeX Kódolás:** `\[ ... \]` blokk-LaTeX szintaxis markdown zárójelek nélkül.
+- **Alapértelmezett HTML/JS Vizualizáció:** Függvényekhez, vektorokhoz, koordináta-geometriához és deriváltakhoz automatikusan működő, interaktív HTML vizualizációs kódot generál.
 - **Hivatalos Függvénytáblázat Korlát:** Kizárólag az [OH-FGV912GY Hivatalos Függvénytáblázat](https://downloads.lipovszky-matek-fizika.hu/downloads/tankonyvek/fuggvenytablazatok/OH-FGV912GY__teljes.pdf) (1–75. oldal) megengedett képleteit használja.
 - **Házi Feladatok Automatikus Feldolgozása:** Dokumentumokból (.docx, PDF) automatikusan kigyűjti és részletesen levezeti a *Kitűzött házi feladat* részeket.
-- **Interaktív HTML Vizualizáció:** Függvényekhez, vektorokhoz, koordináta-geometriához automatikusan futtatható/megtekinthető vizualizációs ábrát generál.
 
 ---
 
@@ -64,7 +67,7 @@ Subway-Math/
     ├── source-policy.md                # Formula table restriction rules (OH-FGV912GY pages 1-75)
     ├── teaching-profile.md             # Pedagogical style and step-by-step guidance
     ├── worksheet-workflow.md           # Exercise list and homework resolution workflow
-    ├── response-format.md              # LaTeX formatting and phone readability
+    ├── response-format.md              # LaTeX formatting, ADHD-friendly style & LaTeX syntax rules
     └── supplied-materials-analysis.md  # Detailed analysis of supplied class materials & teacher style
 ```
 

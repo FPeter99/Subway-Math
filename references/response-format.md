@@ -1,60 +1,36 @@
 ﻿# Response layout and mathematical typography
 
-Use this layout flexibly. Simple questions should remain simple; multi-step solutions should be easy to scan on a narrow phone screen.
+## 1. Zero-Yapp, ADHD-Friendly Formatting Rules
 
-## Standard detailed solution
+- **Visual Anchors**: Use short headers, bold key phrases, bullet points, and callout boxes (`> **Lényeg:**`).
+- **Chunking**: Break solutions into digestible micro-steps. Never output an unbroken wall of prose or algebra.
+- **Punchy Prose**: Explain *why* in 1 short sentence per step.
 
-```markdown
-## [Exercise number / short title]
+## 2. STRICT LaTeX Syntax Protocol (Fixing Render Glitches)
 
-> **Goal:** Find / prove / determine `...`.
+To prevent broken Markdown/MathJax output:
 
-### 1. Given data and plan
+1. **NEVER wrap math blocks in square brackets with raw backslashes** like `[ \begin{aligned} ... \end{aligned} ]`.
+2. **Display Math Syntax**:
+   - Use standard `$$` on its own line:
+     $$
+     \begin{aligned}
+     h'(x) &= 5(2x + 1)^4 \cdot (2x + 1)' \\
+           &= 5(2x + 1)^4 \cdot 2 \\
+           &= 10(2x + 1)^4
+     \end{aligned}
+     $$
+3. **Line Breaks inside LaTeX**:
+   - Inside `\begin{aligned}`, linebreaks MUST be a single double-backslash `\\`.
+   - **NEVER** write escaped space backslashes like `\ \` or `\  \`.
+4. **Inline Math**: Use single dollar signs `$f(x) = x^2$`.
+5. **Final Answers**: Always put the final result inside a box: `$$\boxed{\text{Végeredmény}}$$`.
 
-\[
-... 
-\]
+## 3. Mandatory HTML Visualizations
 
-Briefly state why the selected method applies.
+Generate a standalone, self-contained interactive HTML file (using Canvas/SVG or Plotly/Chart.js via CDN) for almost every exercise involving:
+- Functions, derivatives, integrals
+- Vectors, geometry, trigonometry
+- Sequences, distributions, complex numbers
 
-### 2. Solution
-
-\[
-\begin{aligned}
-... \\
-... 
-\end{aligned}
-\]
-
-Explain the reason for each nontrivial line in prose directly before or after it.
-
-### 3. Check
-
-Substitute / compare constraints / interpret geometrically.
-
-> **Answer**
->
-> \[
-> \boxed{...}
-> \]
-```
-
-## Formatting rules
-
-- Use LaTeX for all mathematical expressions: `$...$` inline and `\[...\]` for display math. Use `$$...$$` only if the renderer specifically needs it.
-- Prefer `\begin{aligned}` for multi-line calculations so equality signs line up.
-- Bold only semantic anchors: **Given**, **Plan**, **Check**, **Answer**, and the decisive conclusion. Do not bold every formula.
-- Use `\boxed{...}` for the final answer to every meaningful subpart. If there are units, include them inside or immediately after the box.
-- Keep displayed calculations short: one conceptual operation per line. Avoid an unbroken wall of algebra.
-- Define notation before using it. Preserve the worksheet’s notation when it is clear and conventional.
-- For cases, use `\begin{cases} ... \end{cases}`; for vectors, use `\begin{pmatrix} ... \end{pmatrix}` or the notation already used in the task.
-- Include domain, membership, units, angle range, or other restrictions beside the answer whenever relevant.
-- Put a short warning in a blockquote only for a genuine trap, e.g. `> **Watch out:** Squaring may introduce extraneous roots.`
-
-## Metro-friendly reading
-
-- One idea per paragraph.
-- Prefer short headings to dense prose.
-- Never rely on color alone to communicate a mathematical distinction.
-- Put the key conclusion at the end of its section, not buried in an earlier calculation.
-- Do not add decorative tables or boxes when they reduce rather than improve readability.
+Show the HTML snippet directly or offer a rich interactive visual component!
