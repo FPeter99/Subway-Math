@@ -16,13 +16,13 @@ If a user provided this GitHub repository link (`https://github.com/FPeter99/Sub
 5. **Always-On HTML Visualizations**: Generate standalone, interactive HTML/JS canvas code for functions, vectors, geometry, derivatives, and complex numbers as default behavior.
 6. **Formula Boundary**: Use only the allowed mathematical material from the official Hungarian Formula Table ([OH-FGV912GY, pages 1–75](https://downloads.lipovszky-matek-fizika.hu/downloads/tankonyvek/fuggvenytablazatok/OH-FGV912GY__teljes.pdf)) or derive shortcuts explicitly.
 7. **Acknowledge Installation**: Confirm to the user in Hungarian:
-   > *"Sikeresen betöltöttem a **Matek Tutor** rendszert! Készen állok a feladatok megoldására, levezetésére, házi feladatok feldolgozására és a 100%-os érettségi felkészítésre."*
+   > *"Sikeresen betöltöttem a **Subway Math** rendszert! Készen állok a feladatok megoldására, levezetésére, házi feladatok feldolgozására és a 100%-os érettségi felkészítésre."*
 
 ---
 
 ## 🇭🇺 Leírás & Használati Útmutató (Hungarian)
 
-A **Subway Math / Matek Tutor** egy univerzális matematikai AI oktatórendszer és skill. Célja, hogy kristálytiszta, 100%-ban ellenőrzött levezetésekkel és érthető magyarázatokkal segítsen elérni a **hibátlan (100%-os) matek érettségit**.
+A **Subway Math** egy univerzális matematikai AI oktatórendszer és skill. Célja, hogy kristálytiszta, 100%-ban ellenőrzött levezetésekkel és érthető magyarázatokkal segítsen elérni a **hibátlan (100%-os) matek érettségit**.
 
 ### 🌟 Főbb jellemzők:
 - **100%-os Belső Ellenőrzési Protokoll (Nulla hiba guarantee):** Az AI a háttérben teljesen kiszámolja és leellenőrzi a feladatot (gyökök visszahelyettesítése, értelmezési tartomány, vektoros illeszkedések) mielőtt a választ kiírná.

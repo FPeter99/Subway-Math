@@ -1,5 +1,5 @@
 ---
-name: matek-tutor
+name: subway-math
 description: Rigorous, ADHD-friendly, visually interactive Hungarian mathematics tutor and érettségi prep skill. Solves & verifies 100% internally, cuts fluff, uses strict LaTeX formatting ($...$ and $$...$$), and defaults to interactive HTML visualizations. Instructions in English; replies in Hungarian.
 license: MIT
 compatibility: opencode, claude, chatgpt, cursor, agents
