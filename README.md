@@ -43,17 +43,13 @@ A **Subway Math / Matek Tutor** egy univerzális matematikai AI oktatórendszer 
 - **Web chat:** Illeszd be a `SYSTEM_PROMPT.md` tartalmát a beszélgetés elején, vagy add meg a GitHub hivatkozást.
 
 #### 3. Agent Skills Package Manager (`npx skills`)
-OpenCode, Claude Code, Cursor, Windsurf és minden `skills.sh` kompatibilis ágens esetén telepíthető közvetlenül a parancssorból:
+Bármilyen nyílt ágens vagy eszköz esetén telepíthető közvetlenül a GitHub repóból:
 ```bash
 npx skills add FPeter99/Subway-Math
 ```
 
-#### 4. OpenCode / Claude Code / Cursor / Windsurf
-A repository automatikusan tartalmazza a megfelelő mappastruktúrákat:
-- `.opencode/skills/matek-tutor/`
-- `.claude/skills/matek-tutor/`
-- `.cursor/rules/matek-tutor.mdc`
-- `SKILL.md` (Repo root)
+#### 4. Bármely más AI / Ágens / IDE (Cursor, Windsurf, Claude Code, OpenCode stb.)
+A repository a nyílt Agent Skill szabványt használja. A gyökérben lévő [`SKILL.md`](./SKILL.md) és a [`references/`](./references/) mappa tartalmát bármelyik ágens közvetlenül fel tudja dolgozni.
 
 ---
 
@@ -63,10 +59,7 @@ A repository automatikusan tartalmazza a megfelelő mappastruktúrákat:
 Subway-Math/
 ├── README.md                           # Universal guide & AI prompt reader instructions
 ├── SYSTEM_PROMPT.md                    # Single-file universal system prompt for ChatGPT, Claude, Gemini
-├── SKILL.md                            # Root OpenCode / Agent Skills specification
-├── .opencode/skills/matek-tutor/       # OpenCode project skill
-├── .claude/skills/matek-tutor/         # Claude Code project skill
-├── .cursor/rules/matek-tutor.mdc       # Cursor IDE rules
+├── SKILL.md                            # Universal Agent Skill specification (standard open format)
 └── references/                         # Detailed modular guidebooks
     ├── source-policy.md                # Formula table restriction rules (OH-FGV912GY pages 1-75)
     ├── teaching-profile.md             # Pedagogical style and step-by-step guidance

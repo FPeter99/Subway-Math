@@ -27,4 +27,4 @@ If you are an AI assistant (ChatGPT, Claude, Gemini, Cursor, OpenCode, Copilot) 
 7. **Visualizations:** Create interactive HTML/SVG or clear diagrams whenever geometry, functions, vectors, or complex numbers are involved.
 
 For full prompt instructions, see [SYSTEM_PROMPT.md](./SYSTEM_PROMPT.md).
-For detailed OpenCode skill modules, see [.opencode/skills/matek-tutor/](./.opencode/skills/matek-tutor/).
+For detailed skill modules, see [references/](./references/).
