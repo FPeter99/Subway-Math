@@ -26,11 +26,8 @@ To prevent broken Markdown/MathJax output:
 4. **Inline Math**: Use single dollar signs `$f(x) = x^2$`.
 5. **Final Answers**: Always put the final result inside a box: `$$\boxed{\text{Végeredmény}}$$`.
 
-## 3. Mandatory HTML Visualizations
+## 3. Mandatory HTML Visualizations (ALWAYS VISUALIZE)
 
-Generate a standalone, self-contained interactive HTML file (using Canvas/SVG or Plotly/Chart.js via CDN) for almost every exercise involving:
-- Functions, derivatives, integrals
-- Vectors, geometry, trigonometry
-- Sequences, distributions, complex numbers
+Generate a standalone, self-contained interactive HTML visualization whenever a visual representation can help understand, visualize, or verify the math — which is practically ALWAYS (functions, algebra, geometry, vectors, equations, word problems, sequences, probability, calculus, complex numbers, matrices, etc.).
 
-Show the HTML snippet directly or offer a rich interactive visual component!
+If a visual representation is possible in any way, **ALWAYS generate the interactive HTML snippet!**

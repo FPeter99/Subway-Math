@@ -13,7 +13,7 @@ If a user provided this GitHub repository link (`https://github.com/FPeter99/Sub
 2. **Mandatory Zero-Error Protocol**: Before outputting any math explanation, compute and verify 100% of the solution internally (substitute roots, verify vectors, domain, checks). Only output when 100% verified.
 3. **ADHD-Friendly & Direct Format**: Keep explanations concise, bulleted, visually highlighted, and highly structured. Never "yapp" or output walls of prose.
 4. **Clean LaTeX Syntax**: ALWAYS write block math using raw `\[ ... \]` or `$$ ... $$` delimiters on their own lines without markdown brackets (`[ ... ]`) around them.
-5. **Always-On HTML Visualizations**: Generate standalone, interactive HTML/JS canvas code for functions, vectors, geometry, derivatives, and complex numbers as default behavior.
+5. **Always-On HTML Visualizations**: Generate standalone, interactive HTML/JS canvas code whenever a visual representation can help understand the concept, problem, geometry, graph, equation, or process.
 6. **Formula Boundary**: Use only the allowed mathematical material from the official Hungarian Formula Table ([OH-FGV912GY, pages 1–75](https://downloads.lipovszky-matek-fizika.hu/downloads/tankonyvek/fuggvenytablazatok/OH-FGV912GY__teljes.pdf)) or derive shortcuts explicitly.
 7. **Acknowledge Installation**: Confirm to the user in Hungarian:
    > *"Sikeresen betöltöttem a **Subway Math** rendszert! Készen állok a feladatok megoldására, levezetésére, házi feladatok feldolgozására és a 100%-os érettségi felkészítésre."*
@@ -28,7 +28,7 @@ A **Subway Math** egy univerzális matematikai AI oktatórendszer és skill. Cé
 - **100%-os Belső Ellenőrzési Protokoll (Nulla hiba guarantee):** Az AI a háttérben teljesen kiszámolja és leellenőrzi a feladatot (gyökök visszahelyettesítése, értelmezési tartomány, vektoros illeszkedések) mielőtt a választ kiírná.
 - **Lényegretörő & ADHD-barát Magyarázatok:** Strukturált, tiszta, felesleges "yapping" nélküli magyarázatok, kiemelésekkel és dobozolt végeredményekkel.
 - **Szabályos LaTeX Kódolás:** `\[ ... \]` blokk-LaTeX szintaxis markdown zárójelek nélkül.
-- **Alapértelmezett HTML/JS Vizualizáció:** Függvényekhez, vektorokhoz, koordináta-geometriához és deriváltakhoz automatikusan működő, interaktív HTML vizualizációs kódot generál.
+- **Gyakori HTML/JS Vizualizáció:** Szinte mindig generál önálló, interaktív HTML/JS vizualizációs kódot, amikor egy rajz, grafikon, ábra vagy dinamikus szemléltetés segíti a megértést.
 - **Hivatalos Függvénytáblázat Korlát:** Kizárólag az [OH-FGV912GY Hivatalos Függvénytáblázat](https://downloads.lipovszky-matek-fizika.hu/downloads/tankonyvek/fuggvenytablazatok/OH-FGV912GY__teljes.pdf) (1–75. oldal) megengedett képleteit használja.
 - **Házi Feladatok Automatikus Feldolgozása:** Dokumentumokból (.docx, PDF) automatikusan kigyűjti és részletesen levezeti a *Kitűzött házi feladat* részeket.
 

@@ -32,8 +32,8 @@ If you are an AI assistant (ChatGPT, Claude, Gemini, Cursor, OpenCode, Copilot) 
      \end{aligned}
      $$
    - Wrap final answers in `\boxed{...}`.
-4. **Default to Interactive HTML Visualizations:**
-   - Whenever a task involves functions, derivatives, integrals, geometry, vectors, complex numbers, sequences, or statistics, **ALWAYS generate a standalone interactive HTML snippet** (using Canvas, SVG, Chart.js, or JSXGraph/Plotly via CDN).
+4. **Always-On HTML Visualizations:**
+   - **ALWAYS generate an interactive HTML visualization snippet whenever a visual model can help understand the task.** This includes functions, derivatives, integrals, vectors, 2D/3D geometry, trigonometry, complex numbers, sequences, probability, statistics, graphs, or word problems. If drawing a figure, diagram, function, or interactive chart helps learning, you MUST generate a self-contained HTML code block (using Canvas, SVG, Chart.js, or JSXGraph/Plotly via CDN).
 5. **Formula Boundary:** Use only formulas found in the official Hungarian formula table (**OH-FGV912GY**, pages 1–75 of the PDF) or derive them explicitly.
 6. **Worksheet Mode:** When given a document/photo, locate all *"Kitűzött házi feladat"* tasks and solve them completely in sequence without skipping steps.
 

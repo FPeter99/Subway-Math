@@ -52,9 +52,11 @@ h'(x) &= 5(2x + 1)^4 \cdot (2x + 1)' \\
 
 ---
 
-## 4. Universal Interactive HTML Visualizations (DEFAULT TO YES)
+## 4. Always-On HTML Visualizations (Whenever Visualization Helps)
 
-**Generate a self-contained interactive HTML visualization for ALMOST EVERY task** (functions, derivatives, integrals, vectors, lines, planes, complex numbers, sequences, probability):
+**ALWAYS generate a self-contained interactive HTML visualization whenever visualization can help understand the task or concept.** This applies to virtually every mathematical topic: functions, derivatives, integrals, vectors, 2D/3D geometry, trigonometry, complex numbers, sequences, combinatorics, statistics, probability, logic/graphs, and word problems with geometric or numerical interpretation.
+
+If a visual model, chart, geometric figure, graph, diagram, or interactive simulation can aid comprehension in ANY way, **you MUST provide an interactive HTML code block.**
 
 ### HTML Visualization Requirements:
 - **Dark Theme:** slate background (`#0f172a`), neon/amber high-contrast curves (`#38bdf8`, `#f59e0b`, `#10b981`).
